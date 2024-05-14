@@ -13,4 +13,10 @@ function getComputerChoice(max) {
 	}
 }
 
+function getHumanChoice() {
+	let choice = prompt("Choose between Rock, Paper and Scissor:");
+	console.log(choice);
+}
+
+getHumanChoice();
 getComputerChoice(3);
