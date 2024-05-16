@@ -49,24 +49,3 @@ function playRound(humanChoice, computerChoice) {
 		computerScore++;
 	}
 }
-
-function playGame() {
-	for (let i = 0; i < 5; i++) {
-		humanSelection = getHumanChoice();
-		computerSelection = getComputerChoice(3);
-		playRound(humanSelection, computerSelection);
-	}
-	if (humanScore < computerScore) {
-		console.log("You lost the Game!");
-		console.log("Computer won: " + computerScore + " Round!");
-		console.log("You won: " + humanScore + " Rounds");
-	} else if (humanScore == computerScore) {
-		console.log("Game ended as a Draw! Both won: " + humanScore + " Rounds");
-	} else {
-		console.log("You won the Game!");
-		console.log("You won: " + humanScore + " Round!");
-		console.log("Computer won: " + computerScore + " Rounds");
-	}
-}
-
-playGame();
