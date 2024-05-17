@@ -10,13 +10,16 @@ const btnScissor = document.querySelector(".scissor");
 
 btnRock.onclick = () => {
 	playRound(btnRock.textContent.toLowerCase(), getComputerChoice(3));
+	updateScore(humanScore, computerScore);
 };
 
 btnPaper.onclick = () => {
 	playRound(btnPaper.textContent.toLowerCase(), getComputerChoice(3));
+	updateScore(humanScore, computerScore);
 };
 btnScissor.onclick = () => {
 	playRound(btnScissor.textContent.toLowerCase(), getComputerChoice(3));
+	updateScore(humanScore, computerScore);
 };
 function getComputerChoice(max) {
 	let choice = Math.floor(Math.random() * max);
@@ -56,4 +59,8 @@ function playRound(humanChoice, computerChoice) {
 			humanChoice.slice(1);
 		computerScore++;
 	}
+}
+
+function updateScore(human, computer) {
+	divScore.textContent = `Your score: ${human}	-	Computer score: ${computer}`;
 }
