@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+}
+
+.btnContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	margin: 24px 0px;
+}
+
+.container {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	text-align: center;
+	gap: 12px;
+}
+
+.btnContainer button {
+	width: 128px;
+	height: 64px;
+	border-radius: 8px;
+	border-width: 1px;
+}
+
+.winner,
+.score {
+	font-size: 36px;
+	font-weight: 1000;
+	background-color: aliceblue;
+}
+
+.round {
+	background-color: paleturquoise;
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.reset {
+	background-color: crimson;
+	color: white;
+	font-size: 32px;
+	font-weight: 800;
+}
